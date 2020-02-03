@@ -6,7 +6,7 @@ python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
 set laststatus=2
-
+set encoding=utf-8
 "russian shortcuts works in command mode (commands don't)
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
@@ -22,6 +22,7 @@ set showmatch
 set incsearch
 set hlsearch
 
+"python3 specific config
 set tabstop=4
 set softtabstop=4
 set expandtab
@@ -29,6 +30,8 @@ set expandtab
 set foldmethod=indent
 set foldlevel=99
 
+"remap exiting insert mode
+inoremap jk <Esc>
 "folding with space
 nnoremap <space> za
 "split navigations
@@ -38,10 +41,10 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
     \ set fileformat=unix

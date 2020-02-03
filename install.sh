@@ -13,7 +13,7 @@ function install () {
 readonly CURDIR=$PWD
 readonly PLUGINS="/home/maxim/.vim/pack/plugins/start"
 readonly INDENT="/home/maxim/.vim/indent"
-echo $PWD $PLUGINS
+echo $CURDIR $PLUGINS
 
 # install dotfiles
 cd ~/dotfiles/
@@ -30,6 +30,8 @@ then
 	git clone git@github.com:altercation/vim-colors-solarized.git
     git clone git@github.com:Konfekt/FastFold.git
     git clone git@github.com:tmhedberg/SimpylFold.git
+    git clone git@github.com:maralla/completor.vim.git
+    pip3 install jedi
 fi
 
 #install vim indent files
@@ -40,8 +42,10 @@ then
 fi
 
 cd $CURDIR 
+echo $'\n\n\n'
 echo "vim extensions installed:"
 ls $PLUGINS
 echo "dotfiles installed:"
 ls ~/.bashrc ~/.vimrc
+echo $'\n\n\n'
 #TODO unset const
