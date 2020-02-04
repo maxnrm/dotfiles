@@ -30,8 +30,6 @@ then
 	git clone git@github.com:altercation/vim-colors-solarized.git
     git clone git@github.com:Konfekt/FastFold.git
     git clone git@github.com:tmhedberg/SimpylFold.git
-    git clone git@github.com:maralla/completor.vim.git
-    pip3 install jedi
 fi
 
 #install vim indent files
