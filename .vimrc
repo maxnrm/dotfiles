@@ -15,7 +15,7 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
-set number
+set relativenumber
 set cursorline
 set wildmenu
 set showmatch
