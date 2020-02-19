@@ -16,6 +16,14 @@ set background=dark
 colorscheme solarized
 
 set relativenumber
+
+"enable relativenumber on focus
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
+
 set cursorline
 set wildmenu
 set showmatch
