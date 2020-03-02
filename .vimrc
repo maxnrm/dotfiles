@@ -15,7 +15,7 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
-set relativenumber
+set relativenumber number
 
 "enable relativenumber on focus
 :augroup numbertoggle
