@@ -17,7 +17,7 @@ echo $CURDIR $PLUGINS
 
 # install dotfiles
 cd ~/dotfiles/
-cp .vimrc .bashrc ~/
+cp .vimrc .bashrc .bash_aliases ~/
 mkdir -p $PLUGINS
 mkdir $INDENT
 cd $PLUGINS
@@ -44,6 +44,6 @@ echo $'\n\n\n'
 echo "vim extensions installed:"
 ls $PLUGINS
 echo "dotfiles installed:"
-ls ~/.bashrc ~/.vimrc
+ls ~/.bashrc ~/.vimrc ~/.bash_aliases
 echo $'\n\n\n'
 #TODO unset const

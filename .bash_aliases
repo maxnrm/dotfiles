@@ -1,0 +1,8 @@
+alias wiki="cd /var/www/html/w"
+alias www="cd /var/www/html"
+alias gs="git status"
+alias gaa="git add ."
+alias gcm="git commit -m"
+alias gpush="git push"
+alias gpushup="git push --set-upstream origin master"
+alias gpull="git pull"
